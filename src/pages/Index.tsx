@@ -507,8 +507,10 @@ const Index = () => {
             {[
               {
                 name: "AI FOR PROFESSIONALS",
+                originalPrice: "$99",
                 price: "$0",
                 description: "FREE Masterclass - Limited Time Offer",
+                couponCode: "ENTREPRENEUR",
                 features: ["Live Training Session", "AI Power Pack (5 Ebooks)", "Real-World Case Studies", "Instant Access", "No Credit Card Required"],
                 popular: true
               }
@@ -521,8 +523,19 @@ const Index = () => {
                 )}
                 <CardHeader className="text-center">
                   <CardTitle className="text-brand-navy">{plan.name}</CardTitle>
-                  <div className="text-4xl font-bold text-brand-navy mb-2">
-                    {plan.price}
+                  <div className="mb-2">
+                    <div className="text-2xl text-gray-400 line-through mb-1">
+                      {plan.originalPrice}
+                    </div>
+                    <div className="text-4xl font-bold text-green-600">
+                      {plan.price}
+                    </div>
+                  </div>
+                  <div className="bg-green-100 border border-green-300 rounded-lg p-3 mb-3">
+                    <p className="text-sm text-green-800 font-semibold">
+                      💰 Use Coupon Code: <span className="font-mono bg-green-200 px-2 py-1 rounded">{plan.couponCode}</span>
+                    </p>
+                    <p className="text-xs text-green-700 mt-1">Get 100% FREE Access!</p>
                   </div>
                   <p className="text-brand-gray">{plan.description}</p>
                 </CardHeader>
