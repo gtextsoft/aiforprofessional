@@ -9,6 +9,7 @@ import artboardImage from "@/assets/Artboard.png"
 import salLogo from "@/assets/SAL.png"
 
 const Index = () => {
+
   return (
     <div className="min-h-screen bg-gradient-subtle">
       {/* Navigation */}
@@ -359,10 +360,15 @@ const Index = () => {
                 A renowned digital transformation expert and Africa's most sought-after investment coach. Dr. Stephen has empowered thousands of professionals across 20+ industries to future-proof their careers and build wealth with actionable AI strategies.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="cta-primary text-lg px-8 py-4 flex items-center justify-center gap-2 group">
+                <a 
+                  href="https://app.mailingboss.com/lists/68b9b44f4e59a/subscribe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-primary text-lg px-8 py-4 flex items-center justify-center gap-2 group"
+                >
                   Start Your AI Transformation Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
             
@@ -549,7 +555,7 @@ const Index = () => {
                     ))}
                   </ul>
                   <a 
-                    href="https://pay.gtextglobal.com/ai-for-professional-masterclass/?coupon=AIMASTERCLASS"
+                    href="https://app.mailingboss.com/lists/68b9b44f4e59a/subscribe"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`w-full text-lg py-4 rounded-xl font-bold transition-all duration-300 block text-center ${
@@ -595,9 +601,14 @@ const Index = () => {
               Get Free Masterclass & Start Trial
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </a>
-            <button className="cta-secondary text-xl px-12 py-6">
+            <a 
+              href="https://app.mailingboss.com/lists/68b9b44f4e59a/subscribe"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-secondary text-xl px-12 py-6"
+            >
               Schedule Live Demo
-            </button>
+            </a>
           </div>
           <div className="flex items-center justify-center gap-8 text-sm opacity-80">
             <div className="flex items-center gap-2">
@@ -663,7 +674,12 @@ const Index = () => {
 
       {/* Floating CTA Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <a href="#pricing" className="cta-primary text-lg px-6 py-4 flex items-center gap-2 group shadow-2xl">
+        <a 
+          href="https://app.mailingboss.com/lists/68b9b44f4e59a/subscribe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cta-primary text-lg px-6 py-4 flex items-center gap-2 group shadow-2xl"
+        >
           Get Free Training
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </a>
